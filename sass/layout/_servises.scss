@@ -3,16 +3,16 @@
     text-align: center;
   }
   
-  .servises-list-container {
+  .servises-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .servises-item{
+  .servises-list__item{
   position: relative;
   }
   
-  .servises-discr {
+  .servises-list__discr {
     position: absolute;
     font-weight: 700;
     line-height: 16px;

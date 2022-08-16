@@ -10,16 +10,16 @@
   justify-content: space-between;
   }
   
-  .address-section {
+  .contacts-section {
     font-style: normal;
     margin-top: 20px;
   }
   
-  .footer-list-item {
+  .footer-contact-list {
     margin-bottom: 9px;
   }
   
-  .footer-address {
+  .contacts-list-item__address {
     font-weight: 400;
     line-height: 1.71;
     color: var(--fon-color);
@@ -31,7 +31,19 @@
       }
   }
 
-  .address {
+  .footer-mailto__mail {
+    font-weight: 400;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-animation);
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+        transition: color var(--transition-animation);
+      }
+  }
+
+  .footer-phone__tel {
     font-weight: 400;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
@@ -47,7 +59,7 @@
     margin-bottom: 9px;
   }
   
-  .footer-title {
+  .footer-social-container__title {
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.14;
@@ -55,23 +67,23 @@
     color: var(--fon-color);
   }
   
-  .footer-social-list {
+  .footer-social-container__list {
     display: flex;
     justify-content: center;
     gap: 10px;
   }
   
-  .footer-social-icon {
+  .footer-social-container__icon {
     fill: var(--fon-color);
     transition: fill var(--transition-animation);
-      .footer-link-icon:hover &,
-      .footer-link-icon:focus & {
+      .footer-social-container__link:hover &,
+      .footer-social-container__link:focus & {
         fill: var(--fon-color);
         transition: fill var(--transition-animation);
       }
   }
   
-  .footer-link-icon {
+  .footer-social-container__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,13 +99,13 @@
       }
   }
   
-  .footer-form {
+  .footer-container-form__sbc {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .footer-form-title {
+  .footer-container-form__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -101,7 +113,7 @@
   margin-bottom: 20px;
   }
   
-  .footer-form-input {
+  .footer-container-form__input {
     min-width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -126,7 +138,7 @@
   
 
   
-  .footer-form-btn {
+  .footer-container-form__btn {
     @extend %btn;
     display: flex;
     justify-content: center;
@@ -137,6 +149,6 @@
     font-family: inherit;
   }
   
-  .footer-form-btn-icon {
+  .footer-container-form__icon {
   margin-left: 10px;
   }
