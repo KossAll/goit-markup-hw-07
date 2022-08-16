@@ -1,13 +1,19 @@
 
 
-@import './base/base';
-@import './base/section';
-@import './base/container';
-@import './base/link';
-@import './base/list';
+@import './base/common';
+@import './base/reset';
 
-@import './components/-section-title.scss';  
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/curent';
+@import './utils/placeholders';
+
+@import './components/section-title';  
 @import './components/logo';
+@import './components/container';
+@import './components/link';
+@import './components/list';
+@import './components/section';
 
 @import './layout/header';
 @import './layout/hero';
@@ -22,8 +28,4 @@
 @import './layout/buttons-section';
 @import './layout/portfolio';
 
-@import './utils/variables';
-@import './utils/visually-hidden';
-@import './utils/curent';
-@import './utils/placeholders';
 
